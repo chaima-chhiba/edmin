@@ -1,0 +1,38 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index",
+    "serve": "nodemon index"
+  },
+  "author": "EdTrust",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  },
+  "_moduleAliases": {
+    "@controllers": "controllers",
+    "@helpers": "helpers",
+    "@models": "models",
+    "@middleware": "middleware"
+  },
+  "dependencies": {
+    "@hubspot/api-client": "^11.1.0",
+    "axios": "^1.7.4",
+    "bcrypt": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "module-alias": "^2.2.3",
+    "mongoose": "^7.6.8",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.9.9",
+    "winston": "^3.13.0",
+    "winston-daily-rotate-file": "^5.0.0"
+  }
+}

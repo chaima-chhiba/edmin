@@ -1,0 +1,20 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
+  "compilerOptions": {
+    "target": "es2020", // Set target to 'esnext' or a specific ECMAScript version that supports import.meta
+    "module": "es2020", // This is important for supporting import.meta
+    "lib": ["es2017", "es2018.promise","es2020"],
+    "ignoreDeprecations": "5.0",
+    "noImplicitAny": false,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "references": [
+    {
+      "path": "./tsconfig.config.json"
+    }
+  ]
+}
